@@ -4,7 +4,7 @@
   {{ $now := now.Format "2006-01-02" }}
 
   <h2>Upcoming Gigs</h2>
-<ul>
+	<ul>
   {{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" }}
     <li>
       <strong>{{ .date | time.Format "02 Jan 2006" }}</strong>, {{ .time }}<br>
