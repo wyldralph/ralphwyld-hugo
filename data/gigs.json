@@ -2,6 +2,8 @@
   {
     "date": "2025-07-15",
     "time": "20:00",
+    "artist": "Benny Goodman Quintet",
+    "artist_url": "https://bennygoodman.com",
     "venue": "Ronnie Scott's Jazz Club",
     "location": "London",
     "ticket_url": "https://example.com/tickets-ronnie"
@@ -9,6 +11,8 @@
   {
     "date": "2025-08-05",
     "time": "19:30",
+    "artist": "Benny Goodman Quintet",
+     "artist_url": "https://bennygoodman.com",
     "venue": "St George’s Hall",
     "location": "Bristol",
     "ticket_url": ""
@@ -16,6 +20,8 @@
   {
     "date": "2025-08-06",
     "time": "19:45",
+    "artist": "Ralph Wyld Quintet",
+    "artist_url": "",
     "venue": "The Lion and Fish",
     "location": "Bath",
     "ticket_url": "/"
@@ -23,6 +29,8 @@
   {
     "date": "2025-09-25",
     "time": "10:30",
+    "artist": "Ralph Wyld Solo",
+    "artist_url": "",
     "venue": "Westoning Village Hall",
     "location": "Westoning",
     "ticket_url": ""
@@ -30,6 +38,8 @@
    {
     "date": "2024-08-06",
     "time": "19:45",
+   "artist": "Queen",
+   "artist_url": "https://queen.com",
     "venue": "The Lion and Fish",
     "location": "Bath",
     "ticket_url": "/"
@@ -37,6 +47,8 @@
    {
     "date": "2025-07-03",
     "time": "19:45",
+    "artist": "Benny Goodman Quintet",
+ "artist_url": "https://bennygoodman.com",
     "venue": "The Bear and Parrot",
     "location": "Bath",
     "ticket_url": "/"
@@ -44,6 +56,8 @@
   {
     "date": "2023-07-03",
     "time": "19:45",
+    "artist": "Benny Goodman Quintet",
+ "artist_url": "https://bennygoodman.com",
     "venue": "The Crab and Turtle",
     "location": "Bath",
     "ticket_url": "/"
@@ -51,6 +65,8 @@
   {
     "date": "2025-01-03",
     "time": "19:45",
+    "artist": "Benny Goodman Quintet",
+ "artist_url": "https://bennygoodman.com",
     "venue": "The Cat and Badger",
     "location": "Bath",
     "ticket_url": "/"

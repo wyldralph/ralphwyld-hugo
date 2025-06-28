@@ -132,9 +132,9 @@ nav ul.nav a.active {
 }
 
 @media (max-width: 600px) {
-  .header-flex {
-    flex-direction: column;
-    align-items: center;
+  .container {
+  max-width: 100%;
+    
   }
 }
 

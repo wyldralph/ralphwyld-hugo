@@ -6,13 +6,24 @@
   <h2>Upcoming Gigs</h2>
 	<ul>
   {{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" }}
-    <li>
-      <strong>{{ .date | time.Format "02 Jan 2006" }}</strong>, {{ .time }}<br>
-      {{ .venue }}, {{ .location }}<br>
-      {{ if .ticket_url }}
-        <a href="{{ .ticket_url }}" class="button">Book Tickets</a>
-      {{ end }}
-    </li>
+ 	 <li>
+	  <strong>
+ 	   {{ if .ticket_url }}
+    	  <a href="{{ .ticket_url }}">
+        	{{ .date | time.Format "Monday 02 Jan 2006" }}</a>
+    	{{ else }}
+      		{{ .date | time.Format "Monday 02 Jan 2006" }}
+    	{{ end }}
+  	</strong>, {{ .time }}<br>
+  
+   	{{ if .artist_url }}
+   		<a href="{{ .artist_url }}">
+  			{{ .artist }}</a>
+  	{{ else }}
+  		{{ .artist }}
+  	{{ end }} 
+  	| {{ .venue }}, {{ .location }}
+</li>
     <br>
   {{ end }}
 </ul>
@@ -22,7 +33,13 @@
   {{ range sort (where site.Data.gigs "date" "lt" $now) "date" "desc" }}
     <li>
       <strong>{{ .date | time.Format "02 Jan 2006" }}</strong>, {{ .time }}<br>
-      {{ .venue }}, {{ .location }}<br>
+      {{ if .artist_url }}
+   		<a href="{{ .artist_url }}">
+  			{{ .artist }}</a>
+  	{{ else }}
+  		{{ .artist }}
+  	{{ end }} 
+	| {{ .venue }}, {{ .location }}<br>
     </li>
     <br>
   {{ end }}
