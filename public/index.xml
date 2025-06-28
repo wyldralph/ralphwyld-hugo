@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ralph Wyld</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Ralph Wyld</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jun 2025 19:33:58 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 27 Jun 2025 19:33:58 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Ralph Wyld is a London-based &lt;a&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&gt;vibraphonist&lt;/a&gt;, percussionist and composer, whose recent accolades include the Kenny Wheeler Jazz Prize 2015, and the Dankworth Prize for Jazz Composition 2015. A graduate of the Royal Academy of Music jazz course, Ralph is making his name playing original, contemporary music with groups such as the Tim Richards Hextet, John Martin’s ‘Hidden Notes’ and Rick Simpson’s ‘Klammer’. He is set to release his debut album in 2016, on leading European Jazz label Edition Records.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Fri, 27 Jun 2025 19:33:58 +0100</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;You can email me at &lt;span&gt;&lt;a&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;href = &#34;mailto:hello@wyld.email&#34;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;onClick = &#34;javascript:window.open(&#39;mailto:hello@wyld.email&#39;, &#39;mail&#39;); event.preventDefault()&#34;&#xA;&#xA;&#x9;&gt;hello@wyld.email&lt;/a&gt;&lt;/span&gt;, or get in touch using the form below:&lt;/p&gt;&#xA;&lt;noscript&gt;&#xA;  &lt;p&gt;Please enable JavaScript to use the contact form&lt;/p&gt;&#xA;&lt;/noscript&gt;&#xA;&#xA;&lt;div id=&#34;letterbird-form&#34;&gt;&lt;/div&gt;&#xA;&#xA;&lt;script data-letterbirduser=&#34;Ralph&#34; src=&#34;https://letterbird.co/embed/v1.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Gigs</title>
+      <link>http://localhost:1313/gigs/</link>
+      <pubDate>Fri, 27 Jun 2025 19:33:58 +0100</pubDate>
+      <guid>http://localhost:1313/gigs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>http://localhost:1313/music/</link>
+      <pubDate>Fri, 27 Jun 2025 19:33:58 +0100</pubDate>
+      <guid>http://localhost:1313/music/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

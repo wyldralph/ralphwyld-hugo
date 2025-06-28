@@ -1,0 +1,11 @@
+<nav>
+  <ul class="nav">
+    {{ $current := . }}
+    {{ range site.Menus.main }}
+      {{ $isCurrent := eq $current.RelPermalink .URL }}
+      <li>
+        <a href="{{ .URL }}" class="{{ if $isCurrent }}active{{ end }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
