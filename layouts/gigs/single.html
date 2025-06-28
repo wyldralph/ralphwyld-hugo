@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ $now := now.Format "2006-01-02" }}
+
+  <h2>Upcoming Gigs</h2>
+<ul>
+  {{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" }}
+    <li>
+      <strong>{{ .date | time.Format "02 Jan 2006" }}</strong>, {{ .time }}<br>
+      {{ .venue }}, {{ .location }}<br>
+      {{ if .ticket_url }}
+        <a href="{{ .ticket_url }}" class="button">Book Tickets</a>
+      {{ end }}
+    </li>
+    <br>
+  {{ end }}
+</ul>
+
+  <h2>Past Gigs</h2>
+<ul>
+  {{ range sort (where site.Data.gigs "date" "lt" $now) "date" "desc" }}
+    <li>
+      <strong>{{ .date | time.Format "02 Jan 2006" }}</strong>, {{ .time }}<br>
+      {{ .venue }}, {{ .location }}<br>
+    </li>
+    <br>
+  {{ end }}
+</ul>
+{{ end }}

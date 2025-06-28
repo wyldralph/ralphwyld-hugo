@@ -20,14 +20,14 @@
       <link>http://localhost:1313/contact/</link>
       <pubDate>Fri, 27 Jun 2025 19:33:58 +0100</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;You can email me at &lt;span&gt;&lt;a&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;href = &#34;mailto:hello@wyld.email&#34;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;onClick = &#34;javascript:window.open(&#39;mailto:hello@wyld.email&#39;, &#39;mail&#39;); event.preventDefault()&#34;&#xA;&#xA;&#x9;&gt;hello@wyld.email&lt;/a&gt;&lt;/span&gt;, or get in touch using the form below:&lt;/p&gt;&#xA;&lt;noscript&gt;&#xA;  &lt;p&gt;Please enable JavaScript to use the contact form&lt;/p&gt;&#xA;&lt;/noscript&gt;&#xA;&#xA;&lt;div id=&#34;letterbird-form&#34;&gt;&lt;/div&gt;&#xA;&#xA;&lt;script data-letterbirduser=&#34;Ralph&#34; src=&#34;https://letterbird.co/embed/v1.js&#34;&gt;&lt;/script&gt;</description>
+      <description>&lt;p&gt;You can email me at &lt;i&gt;hello@wyld.email&lt;/i&gt;, or get in touch using the form below:&lt;/p&gt;&#xA;&lt;noscript&gt;&#xA;  &lt;p&gt;Please enable JavaScript to use the contact form&lt;/p&gt;&#xA;&lt;/noscript&gt;&#xA;&#xA;&lt;div id=&#34;letterbird-form&#34;&gt;&lt;/div&gt;&#xA;&#xA;&lt;script data-letterbirduser=&#34;Ralph&#34; src=&#34;https://letterbird.co/embed/v1.js&#34;&gt;&lt;/script&gt;</description>
     </item>
     <item>
       <title>Gigs</title>
       <link>http://localhost:1313/gigs/</link>
       <pubDate>Fri, 27 Jun 2025 19:33:58 +0100</pubDate>
       <guid>http://localhost:1313/gigs/</guid>
-      <description></description>
+      <description>&lt;p&gt;Here are my upcoming and past gigs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Music</title>
