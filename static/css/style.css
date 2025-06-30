@@ -16,21 +16,6 @@ header, footer {
   font-family: "Vollkorn", serif;
 }
 
-a {
-	color: #313131;
-	text-decoration-line: underline;
-	text-decoration-style: double;
-}
-
-a:visited {
-	color: inherit;
-}
-
-a:hover {
-	color: #d95e00; 
-	transition: color 0.2s;
-}
-
 h1, h2, h3 {
   margin-top: 2rem;
   line-height: 1.3;
@@ -65,8 +50,6 @@ main ul {
 	list-style-type: disc;
 	list-style-position: outside;
 	padding-left: 1rem;
-	
-
 }
 
 main ul li::marker { 
@@ -81,15 +64,53 @@ main ul li {
 	text-align: justify;
 }
 
+main.content a {
+	color: #313131;
+	text-decoration-line: underline;
+	text-decoration-color: lightgrey;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+}
+
+main.content a:hover {
+	color: #d95e00; 
+	text-decoration-line: underline;
+	text-decoration-color: #d95e00;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a:hover {
+	color: #d95e00; 
+	text-decoration-line: underline;
+	text-decoration-color: #d95e00;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+
 main.content {
   flex: 1;
   padding: 2rem;
+  padding-top: 0;
 }
 
 .container {
   max-width: 42rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+  width: 100%;
+  }
 }
 
 .header-flex {
@@ -109,6 +130,21 @@ main.content {
   color: #d95e00;
 }
 
+.site-title a {
+	text-decoration-line: underline;
+	text-decoration-color: lightgrey;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+}
+
+.site-title a:hover {
+	text-decoration-line: underline;
+	text-decoration-color: #d95e00;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	transition: color 0.2s, text-decoration-color 0.2s;
+}
+
 nav ul.nav {
   display: flex;
   flex-wrap: wrap;
@@ -125,19 +161,50 @@ nav ul.nav li {
   margin: 0 1rem;
 }
 
+nav ul.nav a {
+	text-decoration-line: underline;
+	text-decoration-color: lightgrey;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+}
+
+nav ul.nav a:hover {
+	color: #d95e00; 
+	text-decoration-line: underline;
+	text-decoration-color: #d95e00;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	transition: color 0.2s, text-decoration-color 0.2s;
+}
 
 nav ul.nav a.active {
   font-weight: bold;
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .container {
-  max-width: 100%;
-    
-  }
+hr {
+	
+	display: block;
+	margin: 0;
+	border-top: 1px solid lightgrey;
 }
 
 footer {
 		color: #d95e00; 
+}
+
+footer a {
+text-decoration-line: underline;
+	text-decoration-color: lightgrey;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+}
+
+footer a:hover {
+color: #d95e00; 
+	text-decoration-line: underline;
+	text-decoration-color: #d95e00;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	transition: color 0.2s, text-decoration-color 0.2s;
 }

@@ -1,0 +1,31 @@
+ {{ $now := now }}
+{{ $upcoming := where site.Data.gigs "date" "ge" (time.Format "2006-01-02" $now) }}
+{{ $sorted := sort $upcoming "date" }}
+{{ with index $sorted 0 }}
+  <section class="next-gig">
+    <h2>My next live appearance is:</h2>
+    <p>
+     <strong>
+ 	   {{ if .ticket_url }}
+    	  <a href="{{ .ticket_url }}">
+        	{{ .date | time.Format "02 Jan 2006" }}</a>
+    	{{ else }}
+      		{{ .date | time.Format "02 Jan 2006" }}
+    	{{ end }}
+  	</strong>, {{ .time }}<br>
+  		{{ if .artist_url }}
+   		<a href="{{ .artist_url }}">
+  			{{ .artist }}</a>
+  	{{ else }}
+  		{{ .artist }}
+  	{{ end }} 
+  	| {{ .venue }}, {{ .location }}
+        <br>
+    </p>
+  </section>
+{{ else }}
+  <p>No upcoming gigs at the moment.</p>
+{{ end }}
+
+
+<p> See more gigs <a href="/gigs">here</a></p>

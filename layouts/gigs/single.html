@@ -10,9 +10,9 @@
 	  <strong>
  	   {{ if .ticket_url }}
     	  <a href="{{ .ticket_url }}">
-        	{{ .date | time.Format "Monday 02 Jan 2006" }}</a>
+        	{{ .date | time.Format "02 Jan 2006" }}</a>
     	{{ else }}
-      		{{ .date | time.Format "Monday 02 Jan 2006" }}
+      		{{ .date | time.Format "02 Jan 2006" }}
     	{{ end }}
   	</strong>, {{ .time }}<br>
   
