@@ -5,3 +5,9 @@
 [context.production.environment]
   HUGO_VERSION = "0.147.8"
   HUGO_EXTENDED = "true"
+  
+  
+  
+  [functions."daily-build"]
+  schedule = "1 0 * * *"  # At 00:01 UTC every day
+  

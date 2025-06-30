@@ -9,13 +9,17 @@ I also:
 
 - play in cello and percussion duo [Imprint]() with Cecilia Bignall
 - released [an album on Edition Records]() with my band Mosaic
-- arrange and engrave music for sessions, performance, and workshops
+- compose, arrange, and engrave music for sessions, performance, and workshops
+- teach percussion, jazz, and improvisation
+
+***
+
+{{< nextgig >}}
 
 ***
 
 ## BlueHaus Mallets
 I'm a proud [BlueHaus Mallets](https://www.blueha.us) artist, and have been for around seven years. They allow you to custom build your mallet to your exact specifications. If you need some inspiration, check out [my signature model](https://www.blueha.us/artists/ralph-wyld)!
 
-***
 
-{{< nextgig >}}
+
