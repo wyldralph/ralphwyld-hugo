@@ -121,8 +121,12 @@ main.content img.small-image {
 }
 
 @media (max-width: 600px) {
+  body {
+  	padding: 2rem 0rem;
+  }
   .container {
-  width: 100%;
+  	width: 100%;
+  	padding: 0 1rem;
   }
 }
 
