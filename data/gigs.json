@@ -1,75 +1,284 @@
 [
   {
-    "date": "2025-07-15",
-    "time": "20:00",
-    "artist": "Benny Goodman Quintet",
-    "artist_url": "https://bennygoodman.com",
-    "venue": "Ronnie Scott's Jazz Club",
+    "date": "2025-06-21",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "",
+    "location": "Innsbruck",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-06-29",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Turner Sims",
+    "location": "Southampton",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-07-04",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Ljubljana Jazz Festival",
+    "location": "Ljubljana",
+    "ticket_url": "https://ljubljanajazz.si/en/koncert/yazz-ahmed-quartet/"
+  },
+ 
+  {
+    "date": "2025-07-11",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Memphis Club, Lake House, Montreux Jazz Festival",
+    "location": "Montreux",
+    "ticket_url": "https://www.montreuxjazzfestival.com/en/artist/yazz-ahmed/"
+  },
+  {
+    "date": "2025-08-08",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Festival Saint Jazz Cap Ferrat",
+    "location": "France",
+    "ticket_url": "https://www.saint-jean-cap-ferrat.fr/evenements/saint-jazz-cap-ferrat-vendredi-8-aout/"
+  },
+  {
+    "date": "2025-09-21",
+    "artist": "Yazz Ahmed Duo",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "El Molino",
+    "location": "Barcelona",
+    "ticket_url": "https://tickets.oneboxtds.com/elmolinobarcelona/select/2525815?hl=ca-ES"
+  },
+  {
+    "date": "2025-09-22",
+    "artist": "Yazz Ahmed Duo",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Tempo Club",
+    "location": "Madrid",
+    "ticket_url": "https://mutick.com/e/entradas-yazz-ahmed-ralph-wyld-madrid"
+  },
+  {
+    "date": "2025-09-23",
+    "artist": "Yazz Ahmed Duo",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Noites do Porto, Filloa",
+    "location": "La Coruña",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-08",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Enjoy Jazz",
+    "location": "Ludwigshafen",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-08-23",
+    "artist": "The Bevin Boys",
+    "artist_url": "http://bevinboys.com",
+    "venue": "Twinwood Festival",
+    "location": "Bedford",
+    "ticket_url": "https://twinwoodevents.com"
+  },
+  {
+    "date": "2025-08-24",
+    "artist": "The Bevin Boys",
+    "artist_url": "http://bevinboys.com",
+    "venue": "Twinwood Festival",
+    "location": "Bedford",
+    "ticket_url": "https://twinwoodevents.com"
+  },
+   {
+    "date": "2025-08-25",
+    "artist": "James Taylor Quartet",
+    "artist_url": "https://www.jamestaylorquartet.co.uk/jtq/",
+    "venue": "Rye International Jazz & Blues Festival",
+    "location": "Rye",
+    "ticket_url": "https://ryejazz.com/Programme/1224-/James-Taylor-Quartet-JTQ"
+  },
+  
+   {
+    "date": "2025-09-06",
+    "artist": "Shear Brass",
+    "artist_url": "https://www.carlgorham.com/music/?fbclid=PAZXh0bgNhZW0CMTEAAae3Qc1_SEe4BJOpeedPOelaqoJLtDgJujgcVNYpDR45TTsYoHt934MQOF3jdg_aem_trVrEmaF1Al1I5EcwpkPxw",
+    "venue": "Peggy's Skylight",
+    "location": "Nottingham",
+    "ticket_url": "https://peggysskylight.co.uk/events/celebrating-sir-george-shearing-with-shear-brass-6th-september-2025/"
+  },
+  
+  {
+    "date": "2025-10-09",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Unterfarht",
+    "location": "Munich",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-10",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Radiokulturhaus, Studio 3",
+    "location": "Vienna",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-11",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Musicus Consentus",
+    "location": "Florence",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-12",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Sound Of Europe / Mezz",
+    "location": "Breda",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-13",
+    "time": "",
+    "artist": "Yazz Ahmed Duo",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Tourcoing Jazz Festival",
+    "location": "",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-16",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Festival Jazz ao Centro",
+    "location": "Coimbra, Portugal",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-17",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Seixal Jazz",
+    "location": "Portugal",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-18",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Fasching, Stockholm Jazz Festival",
+    "location": "Stockholm",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-10-30",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Multiphonics Festival",
+    "location": "Wuppertal",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-11-01",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "C2C",
+    "location": "Torino",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-11-02",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "C2C",
+    "location": "Torino",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-11-16",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Ronnie Scott’s",
     "location": "London",
-    "ticket_url": "https://example.com/tickets-ronnie"
-  },
-  {
-    "date": "2025-08-05",
-    "time": "19:30",
-    "artist": "Benny Goodman Quintet",
-     "artist_url": "https://bennygoodman.com",
-    "venue": "St George’s Hall",
-    "location": "Bristol",
     "ticket_url": ""
   },
   {
-    "date": "2025-08-06",
-    "time": "19:45",
-    "artist": "Ralph Wyld Quintet",
-    "artist_url": "",
-    "venue": "The Lion and Fish",
-    "location": "Bath",
-    "ticket_url": "/"
-  },
-  {
-    "date": "2025-09-25",
-    "time": "10:30",
-    "artist": "Ralph Wyld Solo",
-    "artist_url": "",
-    "venue": "Westoning Village Hall",
-    "location": "Westoning",
+    "date": "2025-11-18",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Moriska Paviljongen",
+    "location": "Malmö",
     "ticket_url": ""
   },
-   {
-    "date": "2024-08-06",
-    "time": "19:45",
-   "artist": "Queen",
-   "artist_url": "https://queen.com",
-    "venue": "The Lion and Fish",
-    "location": "Bath",
-    "ticket_url": "/"
-  },
-   {
-    "date": "2025-07-03",
-    "time": "19:45",
-    "artist": "Benny Goodman Quintet",
- "artist_url": "https://bennygoodman.com",
-    "venue": "The Bear and Parrot",
-    "location": "Bath",
-    "ticket_url": "/"
+  {
+    "date": "2025-11-19",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Nefertiti Club",
+    "location": "Göteborg",
+    "ticket_url": ""
   },
   {
-    "date": "2023-07-03",
-    "time": "19:45",
-    "artist": "Benny Goodman Quintet",
- "artist_url": "https://bennygoodman.com",
-    "venue": "The Crab and Turtle",
-    "location": "Bath",
-    "ticket_url": "/"
+    "date": "2025-11-21",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Flagey",
+    "location": "Belgium",
+    "ticket_url": ""
   },
   {
-    "date": "2025-01-03",
-    "time": "19:45",
-    "artist": "Benny Goodman Quintet",
- "artist_url": "https://bennygoodman.com",
-    "venue": "The Cat and Badger",
-    "location": "Bath",
-    "ticket_url": "/"
+    "date": "2025-11-22",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Bimhuis",
+    "location": "Netherlands",
+    "ticket_url": ""
+  },
+  {
+    "date": "2025-11-30",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Place au Jazz",
+    "location": "Antony, France",
+    "ticket_url": ""
+  },
+  {
+    "date": "2026-04-07",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "L’Onde",
+    "location": "Vélizy",
+    "ticket_url": ""
+  },
+  {
+    "date": "2026-04-08",
+    "time": "",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Maison de la Culture",
+    "location": "Bourges",
+    "ticket_url": ""
+  },
+  {
+    "date": "2026-04-23",
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "venue": "Salle Communale",
+    "location": "Onex, Switzerland",
+    "ticket_url": ""
   }
 ]
-

@@ -4,10 +4,12 @@ draft = false
 title = ''
 +++
 
+<img src="/images/rwdithered.png" class="small-image"></img>
+
 I'm a vibraphonist, percussionist, composer, and educator from the UK, performing around the world with artists such as [Yazz Ahmed](), [The James Taylor Quartet](), and [Chip Wickham]().
 I also: 
 
-- play in cello and percussion duo [Imprint]() with Cecilia Bignall
+- co-lead cello and percussion duo [Imprint]() with Cecilia Bignall
 - released [an album on Edition Records]() with my band Mosaic
 - compose, arrange, and engrave music for sessions, performance, and workshops
 - teach percussion, jazz, and improvisation

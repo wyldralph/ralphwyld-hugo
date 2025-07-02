@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <h1>{{ .Title }}</h1> 
 
-  {{ $now := now.Format "2006-01-02" }}
+ {{ $now := now.Format "2006-01-02" }}
 
   <h2>Upcoming Gigs</h2>
 	<ul>
@@ -14,7 +14,7 @@
     	{{ else }}
       		{{ .date | time.Format "02 Jan 2006" }}
     	{{ end }}
-  	</strong>, {{ .time }}<br>
+  	</strong><br>
   
    	{{ if .artist_url }}
    		<a href="{{ .artist_url }}">

@@ -3,24 +3,20 @@
 {{ $sorted := sort $upcoming "date" }}
 {{ with index $sorted 0 }}
   <section class="next-gig">
-    <h2>My next live appearance is:</h2>
-    <p>
-     <strong>
- 	   {{ if .ticket_url }}
-    	  <a href="{{ .ticket_url }}">
-        	{{ .date | time.Format "02 Jan 2006" }}</a>
-    	{{ else }}
-      		{{ .date | time.Format "02 Jan 2006" }}
-    	{{ end }}
-  	</strong>, {{ .time }}<br>
-  		{{ if .artist_url }}
+    <p>My next gig is with 
+    {{ if .artist_url }}
    		<a href="{{ .artist_url }}">
   			{{ .artist }}</a>
   	{{ else }}
   		{{ .artist }}
-  	{{ end }} 
-  	| {{ .venue }}, {{ .location }}
-        <br>
+  	{{ end }}
+    at {{ .venue }}, {{ .location }}, on
+ 	   {{ if .ticket_url }}
+    	  <a href="{{ .ticket_url }}">
+        	{{ .date | time.Format "Monday 02 January 2006" }}</a>
+    	{{ else }}
+      		{{ .date | time.Format "Monday 02 January 2006" }}
+    	{{ end }}
     </p>
   </section>
 {{ else }}
@@ -28,4 +24,5 @@
 {{ end }}
 
 
-<p> See more gigs <a href="/gigs">here</a></p>
+<p>More gigs, future and past, are <a href="/gigs">here</a>.</p>
+
