@@ -230,5 +230,13 @@
     "venue": "Salle Communale",
     "location": "Onex, Switzerland",
     "ticket_url": ""
+  },
+  {
+    "artist": "Yazz Ahmed Quartet",
+    "artist_url": "https://www.yazzahmed.com",
+    "date": "2025-05-17",
+    "venue": "Manchester Jazz Festival",
+    "location": "Manchester",
+    "ticket_url": ""
   }
 ]
