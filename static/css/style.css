@@ -179,6 +179,7 @@ nav ul.nav a {
 	text-decoration-color: lightgrey;
 	text-decoration-style: solid;
 	text-decoration-thickness: 2px;
+	color: #313131;
 }
 
 nav ul.nav a:hover {
