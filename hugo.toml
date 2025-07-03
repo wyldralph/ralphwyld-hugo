@@ -9,6 +9,9 @@ author = "Ralph Wyld"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+      
+enableGitInfo = true
+
 
 [menu]
 

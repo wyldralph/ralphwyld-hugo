@@ -1,6 +1,7 @@
 [build]
-  command = "hugo"
+  command = "./scripts/generate-lastmod.sh && hugo"
   publish = "public"
+  
 
 [context.production.environment]
   HUGO_VERSION = "0.147.8"
@@ -11,3 +12,4 @@
 
   [functions."daily-build"]
   schedule = "@daily"
+  

@@ -1,3 +1,7 @@
+{{ with site.Data.lastmod }}
 <footer>
+  <p>This website was last updated on {{ .lastmod | time.Format "02 January 2006" }}.</p>
+  <a href="/colophon">Colophon</a>
   <p>&copy; {{ now.Year }} {{ site.Title }}</p>
 </footer>
+{{ end }}
