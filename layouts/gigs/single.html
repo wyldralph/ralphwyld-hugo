@@ -4,17 +4,17 @@
  {{ $now := now.Format "2006-01-02" }}
 
   <h2>Upcoming Gigs</h2>
-	<ul>
+	<ul class="gig-list">
   {{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" }}
  	 <li>
-	  <strong>
+	  <i class="gig-date">
  	   {{ if .ticket_url }}
     	  <a href="{{ .ticket_url }}">
-        	{{ .date | time.Format "02 Jan 2006" }}</a>
+        	{{ .date | time.Format "02/01/06" }}</a>
     	{{ else }}
-      		{{ .date | time.Format "02 Jan 2006" }}
+      		{{ .date | time.Format "02/01/06" }}
     	{{ end }}
-  	</strong><br>
+  	</i>
   
    	{{ if .artist_url }}
    		<a href="{{ .artist_url }}">
@@ -29,10 +29,10 @@
 </ul>
 
   <h2>Past Gigs</h2>
-<ul>
+<ul class="gig-list">
   {{ range sort (where site.Data.gigs "date" "lt" $now) "date" "desc" }}
     <li>
-      <strong>{{ .date | time.Format "02 Jan 2006" }}</strong>, {{ .time }}<br>
+      <i class="gig-date">{{ .date | time.Format "02/01/06" }}</i>
       {{ if .artist_url }}
    		<a href="{{ .artist_url }}">
   			{{ .artist }}</a>

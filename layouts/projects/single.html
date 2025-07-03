@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <p><strong>Status:</strong> {{ .Params.status }}</p>
+  <p><strong>Summary:</strong> {{ .Params.summary }}</p>
+  {{ if .Params.link }}
+    <p><a href="{{ .Params.link }}" target="_blank">Visit project</a></p>
+  {{ end }}
+  {{ if .Params.featured_image }}
+    <img src="{{ .Params.featured_image }}" alt="Featured image for {{ .Title }}">
+  {{ end }}
+  {{ .Content }}
+  
+  <p style="margin-top: 2rem;">
+  <a href="/projects" class="back-link">
+    ← Back to all projects
+  </a>
+</p>
+  
+{{ end }}
