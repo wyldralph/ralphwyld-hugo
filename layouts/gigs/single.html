@@ -7,7 +7,7 @@
 	<ul class="gig-list">
   {{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" }}
  	 <li>
-	  <i class="gig-date">
+	  <i class="date">
  	   {{ if .ticket_url }}
     	  <a href="{{ .ticket_url }}">
         	{{ .date | time.Format "02/01/06" }}</a>
@@ -32,7 +32,7 @@
 <ul class="gig-list">
   {{ range sort (where site.Data.gigs "date" "lt" $now) "date" "desc" }}
     <li>
-      <i class="gig-date">{{ .date | time.Format "02/01/06" }}</i>
+      <i class="date">{{ .date | time.Format "02/01/06" }}</i>
       {{ if .artist_url }}
    		<a href="{{ .artist_url }}">
   			{{ .artist }}</a>
