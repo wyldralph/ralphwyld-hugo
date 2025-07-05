@@ -1,0 +1,35 @@
+ {{ $artist := (.Get "artist") }}
+{{ $now := now }}
+{{ $upcoming := slice }}
+
+{{ range where site.Data.gigs "date" "ge" ($now.Format "2006-01-02") }}
+  {{ if in .artist $artist }}
+    {{ $upcoming = $upcoming | append (dict
+      "date" .date
+      "artist" .artist
+      "venue" .venue
+      "location" .location
+      "ticket_url" .ticket_url
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ $total := len $upcoming }}
+
+{{ if gt $total 0 }}
+  <div class="artist-upcoming-gigs">
+    <h2>Upcoming gigs</h2>
+    <ul class="gig-list">
+      {{ range first 5 (sort $upcoming "date") }}
+        <li><i class="date">{{ .date | time.Format "02.01.06" }}</i> | {{ .artist }} at {{ if .ticket_url }}
+              <a href="{{ .ticket_url }}">{{ .venue }}</a>{{ else }}{{ .venue }}{{ end }}, {{ .location }}
+        </li>
+      {{ end }}
+    </ul>
+
+    {{ if gt $total 5 }}
+      <p><a href="/gigs/">See more gigs?</a></p>
+    {{ end }}
+  </div>
+{{ end }}
+

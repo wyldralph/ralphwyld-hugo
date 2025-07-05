@@ -1,0 +1,33 @@
+<div id="upcoming" class="upcoming-gigs">
+
+{{ $list := site.Data.gigs }}
+{{ $sorting := "asc" }}
+{{ $lastYear := "" }}
+{{ $lastMonth := "" }}
+{{ $now := now.Format "2006-01-02" }}
+
+{{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" $list $sorting }}
+  {{ $parsed := time .date }}
+  {{ $year := $parsed.Format "2006" }}
+  {{ $month := $parsed.Format "January" }}
+
+  {{ if ne $year $lastYear }}
+    {{ $lastYear = $year }}
+    {{ $lastMonth = "" }} {{/* reset month when year changes */}}
+  {{ end }}
+
+  {{ if ne $month $lastMonth }}
+    <h3>{{ $month }} {{ $year }}</h3>
+    {{ $lastMonth = $month }}
+  {{ end }}
+  <ul class="gig-list">
+  <li><i class="date">{{ $parsed.Format "02.01" }}</i> | {{ if .artist_url }}
+   		<a href="{{ .artist_url }}">
+  			{{ .artist }}</a>
+  	{{ else }}
+  		{{ .artist }}
+  	{{ end }} at {{ if .ticket_url }} <a href="{{ .ticket_url }}">{{ .venue }}</a>{{ else }}{{ .venue}}{{ end }}, {{ .location }}</li>
+  </ul>
+{{ end }}
+
+</div>

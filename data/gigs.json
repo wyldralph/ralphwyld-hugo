@@ -3,7 +3,7 @@
     "artist": "Yazz Ahmed Quartet",
     "artist_url": "https://www.yazzahmed.com",
     "date": "2025-06-21",
-    "venue": "",
+    "venue": "Heart of Noise Festival",
     "location": "Innsbruck",
     "ticket_url": ""
   },
@@ -71,6 +71,14 @@
     "location": "Nottingham",
     "ticket_url": "https://peggysskylight.co.uk/events/celebrating-sir-george-shearing-with-shear-brass-6th-september-2025/"
   },
+    {
+    "artist": "Yazz Ahmed Duo",
+    "artist_url": "https://www.yazzahmed.com",
+    "date": "2025-09-22",
+    "venue": "Tempo Club",
+    "location": "Madrid",
+    "ticket_url": "https://mutick.com/e/entradas-yazz-ahmed-ralph-wyld-madrid"
+  },
   {
     "artist": "Yazz Ahmed Duo",
     "artist_url": "https://www.yazzahmed.com",
@@ -78,14 +86,6 @@
     "venue": "El Molino",
     "location": "Barcelona",
     "ticket_url": "https://tickets.oneboxtds.com/elmolinobarcelona/select/2525815?hl=ca-ES"
-  },
-  {
-    "artist": "Yazz Ahmed Duo",
-    "artist_url": "https://www.yazzahmed.com",
-    "date": "2025-09-22",
-    "venue": "Tempo Club",
-    "location": "Madrid",
-    "ticket_url": "https://mutick.com/e/entradas-yazz-ahmed-ralph-wyld-madrid"
   },
   {
     "artist": "Yazz Ahmed Duo",

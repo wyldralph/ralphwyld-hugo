@@ -1,0 +1,35 @@
+<div id="past" class="past-gigs">
+
+    <h2>Past gigs</h2>
+
+  {{ $list := site.Data.gigs }}
+{{ $sorting := "desc" }}
+{{ $lastYear := "" }}
+{{ $lastMonth := "" }}
+{{ $now := now.Format "2006-01-02" }}
+
+{{ range sort (where site.Data.gigs "date" "lt" $now) "date" "desc" $list $sorting }}
+  {{ $parsed := time .date }}
+  {{ $year := $parsed.Format "2006" }}
+  {{ $month := $parsed.Format "January" }}
+
+  {{ if ne $year $lastYear }}
+
+    {{ $lastYear = $year }}
+    {{ $lastMonth = "" }} {{/* reset month when year changes */}}
+  {{ end }}
+
+  {{ if ne $month $lastMonth }}
+    <h3>{{ $month }} {{ $year }}</h3>
+    {{ $lastMonth = $month }}
+  {{ end }}
+  <ul class="gig-list">
+  <li><i class="date">{{ $parsed.Format "02.01" }}</i> | {{ if .artist_url }}
+   		<a href="{{ .artist_url }}">
+  			{{ .artist }}</a>
+  	{{ else }}
+  		{{ .artist }}{{ end }} at {{ .venue}}, {{ .location }}</li>
+  </ul>
+{{ end }}
+
+</div>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<h1 class="page-title">Projects</h1>
+
+<ul class="posts">
+	{{ range .Data.Pages }}
+		<li class="post">
+			<a href="{{ .RelPermalink }}">{{.Title}}</a>
+		</li>
+	{{ end }}
+</ul>
+{{ end }}

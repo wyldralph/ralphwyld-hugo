@@ -9,32 +9,6 @@
   {{ end }}
   {{ .Content }}
   
-  <div class="artist-upcoming-gigs">
-  	<h2>Upcoming gigs</h2>
-  
-{{ $artist := "Yazz Ahmed" }}
-{{ $now := now }}
-<ul>
-  {{ range sort (where site.Data.gigs "date" "ge" ($now.Format "2006-01-02")) "date" }}
-    {{ if in .artist $artist }}
-      <li>
-        <strong>
-          {{ if .ticket_url }}
-            <a href="{{ .ticket_url }}">{{ .date | time.Format "02 Jan 2006" }}</a>
-          {{ else }}
-            {{ .date | time.Format "02 Jan 2006" }}
-          {{ end }}
-        </strong><br>
-        {{ .artist }} — {{ .venue }}, {{ .location }}
-      </li>
-    {{ end }}
-  {{ end }}
-</ul>
-
-
-  
-  </div>
-  
   <div class="artist-recordings">
 	  <h2>Recordings</h2>
   

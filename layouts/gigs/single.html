@@ -1,47 +1,15 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1> 
 
- {{ $now := now.Format "2006-01-02" }}
+<p>Upcoming | <a href="#past">Past</a></p>
 
-  <h2>Upcoming Gigs</h2>
-	<ul class="gig-list">
-  {{ range sort (where site.Data.gigs "date" "ge" $now) "date" "asc" }}
- 	 <li>
-	  <i class="date">
- 	   {{ if .ticket_url }}
-    	  <a href="{{ .ticket_url }}">
-        	{{ .date | time.Format "02/01/06" }}</a>
-    	{{ else }}
-      		{{ .date | time.Format "02/01/06" }}
-    	{{ end }}
-  	</i>
-  
-   	{{ if .artist_url }}
-   		<a href="{{ .artist_url }}">
-  			{{ .artist }}</a>
-  	{{ else }}
-  		{{ .artist }}
-  	{{ end }} 
-  	| {{ .venue }}, {{ .location }}
-</li>
-    <br>
-  {{ end }}
-</ul>
+{{ partial "upcoming-gigs.html" . }}
 
-  <h2>Past Gigs</h2>
-<ul class="gig-list">
-  {{ range sort (where site.Data.gigs "date" "lt" $now) "date" "desc" }}
-    <li>
-      <i class="date">{{ .date | time.Format "02/01/06" }}</i>
-      {{ if .artist_url }}
-   		<a href="{{ .artist_url }}">
-  			{{ .artist }}</a>
-  	{{ else }}
-  		{{ .artist }}
-  	{{ end }} 
-	| {{ .venue }}, {{ .location }}<br>
-    </li>
-    <br>
-  {{ end }}
-</ul>
+<hr />
+
+<p><a href="#upcoming">Upcoming</a> | Past</p>
+
+{{ partial "past-gigs.html" . }}
+
+
 {{ end }}
