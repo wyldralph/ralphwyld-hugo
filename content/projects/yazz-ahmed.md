@@ -3,7 +3,7 @@ title = "Yazz Ahmed"
 date = 2025-07-05T11:32:58+02:00
 summary = "The queen of psychedelic arabic jazz, Yazz leads bands from large ensembles to duos"
 link = ""
-tags = []
+tags = ["featured"]
 featured_image = ""
 artist-id = "003"
 +++

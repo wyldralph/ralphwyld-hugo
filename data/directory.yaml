@@ -1,0 +1,25 @@
+- title: "My projects"
+  dynamic: "projects"
+  tag: "rw"
+  description: ""
+  order: 1
+
+
+- title: "Latest discography"
+  dynamic: discography
+  description: ""
+  order: 3
+
+- title: "Featured projects"
+  dynamic: "projects"
+  tag: "featured"
+  description: ""
+  order: 2
+
+#- title: "Writing"
+#  description: ""
+#  links:
+#    - text: "Blog"
+#      url: "/blog/"
+#    - text: "Newsletter"
+#     url: "/newsletter/"

@@ -5,7 +5,7 @@ summary = ""
 link = ""
 tags = []
 featured_image = ""
-artist-id = ""
+artist_id = ""
 +++
 
 

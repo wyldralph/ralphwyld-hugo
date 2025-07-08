@@ -32,6 +32,14 @@
     "ticket_url": "https://www.montreuxjazzfestival.com/en/artist/yazz-ahmed/"
   },
   {
+    "artist": "James Taylor Quartet",
+    "artist_url": "https://www.jamestaylorquartet.co.uk/jtq/",
+    "date": "2025-07-18",
+    "venue": "The Barbican",
+    "location": "London",
+    "ticket_url": "https://www.barbican.org.uk/whats-on/2025/event/james-taylor-quartet"
+  },
+  {
     "artist": "Yazz Ahmed Quartet",
     "artist_url": "https://www.yazzahmed.com",
     "date": "2025-08-08",

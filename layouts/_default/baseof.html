@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script data-goatcounter="https://ralphwyld.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+  {{ if .Params.noindex }} <meta name="robots" content="noindex" /> {{ end }}
 </head>
 <body>
   {{ partial "header.html" . }}

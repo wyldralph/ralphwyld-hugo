@@ -3,7 +3,7 @@ title = "Mosaic"
 date = 2025-07-04T18:23:56+02:00
 summary = "Mosaic combines elements of contemporary jazz and chamber music in an exciting but accessible way"
 link = ""
-tags = []
+tags = ["rw"]
 featured_image = ""
 artist-id = "001"
 +++

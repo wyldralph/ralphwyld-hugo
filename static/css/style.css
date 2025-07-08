@@ -16,11 +16,11 @@ header {
   font-family: "Vollkorn", serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin-top: 2rem;
   line-height: 1.3;
   color: #d95e00;
-font-family: "Vollkorn", serif;
+  font-family: "Vollkorn", serif;
 }
 
 h1 {
@@ -35,8 +35,29 @@ h3 {
   font-size: 1.25rem;
 }
 
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	font-family: monospace;
+	line-height: 0;
+	margin: 1rem 0.5rem 0.3rem 0.5rem;
+}
+
 p {
   margin-bottom: 1.25rem;
+}
+
+p.back-link {
+	margin-bottom: 0;
+	color: #313131;
+}
+
+main p.back-link a {
+	color: #313131;
 }
 
 i {
@@ -47,10 +68,14 @@ a {
 	color: inherit;
 }
 
+blockquote {
+	font-style: italic;
+}
+
 main p {
 	color: #313131;
 	font-size: 1rem;
-	font-family: "Inter"; sans-serif;
+	font-family: "Inter", sans-serif;
 	text-align: justify;
 }
 
@@ -68,7 +93,7 @@ main ul li {
 	padding-left: 2rem;
 	color: #313131;
 	font-size: 1rem;
-	font-family: "Inter"; sans-serif;
+	font-family: "Inter", sans-serif;
 	text-align: justify;
 }
 
@@ -111,7 +136,7 @@ main.content {
   padding-top: 0;
 }
 
-main.content img {
+img {
 	width: 100%
 }
 
@@ -127,6 +152,8 @@ main.content img.small-image {
   max-width: 42rem;
   margin: 0 auto;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 600px) {
@@ -232,8 +259,106 @@ i.date a {
 	color: #d95e00
 }
 
+i.data {
+	text-transform: uppercase;
+	font-family: monospace;
+}
+
+.directory-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 0;
+}
+
+.directory-block {
+  flex: 1 1 250px;
+}
+
+.directory-block h4 {
+	margin: 0.5rem 0;
+}
+
+.directory-block ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.directory-block p {
+	font-size: 0.8rem;
+}
+
+.directory-block li {
+	font-size: 0.8rem;
+	padding-left: 0;
+}
+
+div.summary-block {
+	display: block;
+	background-color: #D95E0015 ;
+	padding: 1em;
+	border-radius: 2px;
+}
+
+q.music-summary {
+	font-family: "Inter", sans-serif;
+	font-style: italic;
+	color: #313131;
+}
+
+img.featured-image {
+	max-width: 400px;
+	padding: 1rem 0;
+}
+
+.flex-recording {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.recording-text {
+    flex: 1 1 250px;
+    min-width: 200px;
+}
+
+.recordings-list-cover {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+	align-self: flex-end;
+}
+
+.embed-bandcamp-player {
+	align-self: center;
+	padding: 2rem 0;
+}
+
+.discography-meta {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.discography-data {
+	background-color: #d95e0015;
+	border-radius: 5px;
+	padding: 0 1rem;
+	text-align: center;
+	margin: 10px;
+}
+
+.discography-info {
+	color: #d95e00;
+  	font-family: monospace;
+	font-size: 1rem;
+}
+
 hr {
-	
 	display: block;
 	margin: 0;
 	border-top: 1px solid rgba(0,0, 0, 0.25);

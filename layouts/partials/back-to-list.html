@@ -1,0 +1,14 @@
+{{- $section := .Section -}}
+{{- $title := "" -}}
+
+{{- if eq $section "discography" -}}
+  {{ $title = "Discography" }}
+{{- else if eq $section "projects" -}}
+  {{ $title = "Projects" }}
+{{- else -}}
+  {{ $title = humanize $section }}
+{{- end -}}
+
+<p class="back-link">
+  <a href="{{ .Site.BaseURL }}{{ $section }}/">← Back to {{ $title }}</a>
+</p>

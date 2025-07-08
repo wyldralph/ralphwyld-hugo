@@ -13,3 +13,7 @@
   [functions."daily-build"]
   schedule = "@daily"
   
+  [[redirects]]
+	from = "/*"
+	to = "/404/"
+	status = 404

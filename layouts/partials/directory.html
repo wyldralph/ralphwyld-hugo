@@ -1,0 +1,42 @@
+{{ $dirPage := site.GetPage "directory" }}
+{{ with $dirPage }}
+  <section class="directory-intro">
+    {{ .Content }}
+  </section>
+{{ end }}
+
+<section class="directory">
+  <div class="directory-container">
+    {{ range sort site.Data.directory "order" }}
+      <div class="directory-block" style="order: {{ .order }}">
+        <h4>{{ .title }}</h4>
+        {{ with .description }}<p>{{ . }}</p>{{ end }}
+        <ul>
+          {{ if .links }}
+            {{ range .links }}
+              <li><a href="{{ .url }}">{{ .text }}</a></li>
+            {{ end }}
+          {{ else if and (eq .dynamic "projects") (isset . "tag") }}
+            {{ $tag := .tag }}
+            {{ range where site.RegularPages "Section" "projects" }}
+              {{ if in .Params.tags $tag }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+          <li><a href="/projects">→ View all projects</a></li>
+           {{ else if eq .dynamic "discography" }}
+              {{ $hasTag := isset . "tag" }}
+              {{ $tag := .tag }}
+              {{ $pages := sort (where site.RegularPages "Section" "discography") ".Params.release_date" "desc" }}
+              {{ range $pages }}
+              {{ if or (not $hasTag) (in .Params.tags $tag) }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+          <li><a href="/discography">→ View all discography</a></li>
+        {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+</section>

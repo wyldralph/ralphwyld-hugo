@@ -1,11 +1,14 @@
 {{ define "main" }}
+{{ partial "back-to-list.html" . }}
   <h1>{{ .Title }}</h1>
-  <p><strong>Summary:</strong> {{ .Params.summary }}</p>
+  <div class="summary-block">
+  <q class="music-summary">{{ .Params.summary }}</q>
+  </div>
   {{ if .Params.link }}
     <p><a href="{{ .Params.link }}" target="_blank">Visit project</a></p>
   {{ end }}
   {{ if .Params.featured_image }}
-    <img src="{{ .Params.featured_image }}" alt="Featured image for {{ .Title }}">
+    <img class="featured-image" src="{{ .Params.featured_image }}" alt="Featured image for {{ .Title }}">
   {{ end }}
   {{ .Content }}
   
@@ -13,12 +16,5 @@
 	  <h2>Recordings</h2>
   
   </div>
-  
-  
-  <p style="margin-top: 2rem;">
-  <a href="/projects" class="back-link">
-    ← Back to all projects
-  </a>
-</p>
   
 {{ end }}
