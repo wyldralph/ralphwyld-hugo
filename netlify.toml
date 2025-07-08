@@ -1,5 +1,5 @@
 [build]
-  command = "./scripts/generate-lastmod.sh && hugo"
+  command = "./scripts/generate-lastmod.sh || true && hugo"
   publish = "public"
   
 
