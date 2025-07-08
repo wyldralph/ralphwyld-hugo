@@ -7,6 +7,14 @@
   HUGO_VERSION = "0.147.8"
   HUGO_EXTENDED = "true"  
   
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.147.8"
+  HUGO_EXTENDED = "true"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.147.8"
+  HUGO_EXTENDED = "true"
+
  [functions]
   directory = "netlify/functions"
 
