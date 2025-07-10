@@ -2,11 +2,15 @@
 
 <h1 class="page-title">Projects</h1>
 
-<ul class="posts">
-	{{ range .Data.Pages }}
-		<li class="post">
-			<a href="{{ .RelPermalink }}">{{.Title}}</a>
-		</li>
-	{{ end }}
-</ul>
+
+    {{ range (.Pages.GroupByParam "mine").Reverse }}
+        {{ $label := cond (eq .Key true) "My Projects" "Sideman Projects" }}
+        <h2 id="{{ .Key | title }}">{{ $label }}</h2>
+        <ul class="projects-list">
+            {{ range .Pages }}
+                <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> - <em>{{ .Params.summary }}</em></li>
+            {{ end }}
+        </ul>
+    {{ end }}
+
 {{ end }}

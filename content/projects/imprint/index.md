@@ -1,7 +1,8 @@
 +++
 title = "Imprint"
-date = 2025-07-03T08:08:03+01:00
+date = 2025-07-09T08:08:03+01:00
 summary = "Genre-bending cello and percussion duo"
+mine = true
 link = "https://imprint.band"
 tags = ["rw"]
 featured_image = "/images/imprint.jpeg"

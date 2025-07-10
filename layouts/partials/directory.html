@@ -28,7 +28,7 @@
               {{ $hasTag := isset . "tag" }}
               {{ $tag := .tag }}
               {{ $pages := sort (where site.RegularPages "Section" "discography") ".Params.release_date" "desc" }}
-              {{ range $pages }}
+              {{ range first 5 $pages }}
               {{ if or (not $hasTag) (in .Params.tags $tag) }}
               <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}

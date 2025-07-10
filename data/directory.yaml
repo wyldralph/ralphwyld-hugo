@@ -2,7 +2,7 @@
   dynamic: "projects"
   tag: "rw"
   description: ""
-  order: 1
+  order: 2
 
 
 - title: "Latest discography"
@@ -10,16 +10,23 @@
   description: ""
   order: 3
 
-- title: "Featured projects"
+- title: "Featured sideman projects"
   dynamic: "projects"
   tag: "featured"
   description: ""
-  order: 2
+  order: 4
 
-#- title: "Writing"
-#  description: ""
-#  links:
-#    - text: "Blog"
-#      url: "/blog/"
-#    - text: "Newsletter"
-#     url: "/newsletter/"
+- title: "Basics"
+  description: ""
+  order: 1
+  links:
+    - text: "About me"
+      url: "/about/"
+    - text: "Gigs"
+      url: "/gigs/"
+    - text: "Instagram"
+      url: "https://www.instagram.com/ralphwyld/"
+    - text: "Blog - At The Wyld Edge"
+      url: "https://atthewyldedge.com"
+    - text: "Garden Design"
+      url: "https://wylddesign.studio"

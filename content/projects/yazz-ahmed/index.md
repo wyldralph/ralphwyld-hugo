@@ -1,11 +1,13 @@
 +++
 title = "Yazz Ahmed"
-date = 2025-07-05T11:32:58+02:00
-summary = "The queen of psychedelic arabic jazz, Yazz leads bands from large ensembles to duos"
+date = 2025-07-09T11:32:58+02:00
+summary = "The queen of psychedelic arabic jazz"
+mine = false
 link = ""
 tags = ["featured"]
 featured_image = ""
 artist-id = "003"
+weight = 1
 +++
 
 My first gig with Yazz was back in 2012, at the very first iteration of [Jazz in the Round](). That was a trio completed by Dave Manington, and the 3 of us have been playing together ever since. We tour mostly as a quartet, and until recently the band featured the late, great, and sorely missed, Martin France on drums.

@@ -72,6 +72,10 @@ blockquote {
 	font-style: italic;
 }
 
+span {
+	white-space: nowrap;
+}
+
 main p {
 	color: #313131;
 	font-size: 1rem;
@@ -265,18 +269,17 @@ i.data {
 }
 
 .directory-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0 0;
+  	columns: 2;
+  	column-gap: 2rem;
 }
 
 .directory-block {
-  flex: 1 1 250px;
+	break-inside: avoid-column;
+  	margin-bottom: 2rem;
 }
 
 .directory-block h4 {
-	margin: 0.5rem 0;
+	margin: 0 0 0.5rem 0;
 }
 
 .directory-block ul {
@@ -331,6 +334,7 @@ img.featured-image {
     object-fit: cover;
     flex-shrink: 0;
 	align-self: flex-end;
+	margin-top: 2rem;
 }
 
 .embed-bandcamp-player {
@@ -356,6 +360,25 @@ img.featured-image {
 	color: #d95e00;
   	font-family: monospace;
 	font-size: 1rem;
+}
+
+.bandcamp-art
+	{
+		border: 0;
+		width: 100%;
+		max-width: 650px;
+		max-height: 650px;
+	}
+
+ul.projects-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+ul.projects-list li {
+	padding-left: 0;
+	margin-bottom: 1rem;
 }
 
 hr {

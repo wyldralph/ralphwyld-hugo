@@ -1,7 +1,8 @@
 +++
 title = "Mosaic"
 date = 2025-07-04T18:23:56+02:00
-summary = "Mosaic combines elements of contemporary jazz and chamber music in an exciting but accessible way"
+summary = "Mosaic combines elements of contemporary jazz and chamber music"
+mine = true
 link = ""
 tags = ["rw"]
 featured_image = ""

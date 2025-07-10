@@ -10,13 +10,8 @@
   	{{ else }}
   		{{ .artist }}
   	{{ end }}
-    at {{ .venue }}, {{ .location }}, on
- 	   {{ if .ticket_url }}
-    	  <a href="{{ .ticket_url }}">
-        	{{ .date | time.Format "Monday 02 January 2006" }}</a>
-    	{{ else }}
-      		{{ .date | time.Format "Monday 02 January 2006" }}
-    	{{ end }}
+    at {{ if .ticket_url }} <a href="{{ .ticket_url }}">{{ .venue }}</a>{{ else }} {{ .venue }}{{ end }}, {{ .location }}, on 	
+	   <span>{{ .date | time.Format "Monday 02 January 2006" }}.</span>
     </p>
   </section>
 {{ else }}
