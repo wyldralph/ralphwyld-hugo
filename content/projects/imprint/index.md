@@ -5,7 +5,7 @@ summary = "Genre-bending cello and percussion duo"
 mine = true
 link = "https://imprint.band"
 tags = ["rw"]
-featured_image = "/images/imprint.jpeg"
+featured_image = "images/imprint.jpeg"
 artist-id = "002"
 +++
 
