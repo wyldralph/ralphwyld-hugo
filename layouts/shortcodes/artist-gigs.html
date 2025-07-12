@@ -1,4 +1,4 @@
- {{ $artist := (.Get "artist") }}
+{{ $artist := .Get 0 | default .Page.Params.title }}
 {{ $now := now }}
 {{ $upcoming := slice }}
 

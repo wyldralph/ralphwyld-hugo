@@ -14,4 +14,7 @@ My first gig with Yazz was back in 2012, at the very first iteration of [Jazz in
 
 Yazz and I have had the opportunity to play as a duo recently, which has a totally different feel from the quartet. Although some of the music is the same, the arrangements are brand new, and feature electronics, tracks, and loops. I also play both marimba and vibraphone on the gigs.
 
-{{< artist-gigs artist="Yazz Ahmed" >}}
+{{< artist-gigs >}}
+
+{{< artist-records >}}
+

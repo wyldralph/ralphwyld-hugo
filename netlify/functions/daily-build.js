@@ -7,20 +7,14 @@ export default async (event, context) => {
     });
 
     if (!response.ok) {
-      return {
-        statusCode: response.status,
-        body: `Build hook failed: ${response.statusText}`
-      };
+      return new Response(`Build hook failed: ${response.statusText}`, {
+        status: response.status
+      });
     }
 
-    return {
-      statusCode: 200,
-      body: 'Build triggered successfully'
-    };
+    return new Response('Build triggered successfully', { status: 200 });
+
   } catch (error) {
-    return {
-      statusCode: 500,
-      body: `Error triggering build: ${error.message}`
-    };
+    return new Response(`Error triggering build: ${error.message}`, { status: 500 });
   }
 };

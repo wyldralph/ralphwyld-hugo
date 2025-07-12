@@ -23,9 +23,12 @@ Musicians who have performed with Mosaic include:
 - Scott Chapman
 - Max Luthert
 - Dave Hamblett
+- George Crowley
 - Eliot Galvin
 - Iosif Purits
 - John Garner
 - Will Glaser
 
 {{< artist-gigs artist="Mosaic" >}}
+
+{{< artist-records >}}

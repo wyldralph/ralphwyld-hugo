@@ -1,0 +1,31 @@
+ {{ $project := .Get 0 | default .Page.Params.title }}
+ {{ $records := slice }}
+
+{{ $discs := site.GetPage "discography" }}
+{{ range $discs.RegularPages }}
+  {{ if eq .Params.artist $project }}
+  {{ $records = $records | append . }}
+  {{ end }}
+{{ end }}
+
+
+{{ if $records }}
+
+<h2>Project discography</h2>
+
+{{ range sort $records "Params.release_date" "desc" }}
+    <div class="flex-recording">
+        <div class="recording-text">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>Artist: <a href="{{ .Params.artist_link }}">{{ .Params.artist }}</a></p>
+            <p>Release date: <i class="date">{{ .Params.release_date | time.Format "2 Jan 2006" }}</i></p>
+        </div>
+        {{ with .Resources.GetMatch .Params.featured_image }}
+            <a href="{{ .RelPermalink }}"><img class="recordings-list-cover" src="{{ .RelPermalink }}" alt="Album cover for {{ .Title }}"></a>
+        {{ end }}
+
+    </div>
+        <hr />
+    {{ end }}
+
+{{ end }}

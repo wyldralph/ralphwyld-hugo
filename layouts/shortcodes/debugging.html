@@ -1,0 +1,4 @@
+{{ $discs := site.GetPage "discography" }}
+{{ range $discs.RegularPages }}
+  <p>DEBUG: Found disc page: {{ .Title }}</p>
+{{ end }}

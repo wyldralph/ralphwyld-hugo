@@ -13,5 +13,5 @@ weight = 2
 
 {{< artist-gigs artist="Surface Tension" >}}
 
-
+{{< artist-records >}}
 

@@ -10,5 +10,6 @@ artist_id = ""
 +++
 
 
-{{< artist-gigs artist="James Taylor Quartet" >}}
+{{< artist-gigs >}}
 
+{{< artist-records >}}
