@@ -1,0 +1,5 @@
+{{ $projects := site.GetPage "section" "projects" }}
+{{ $filtered := where $projects.Pages "Params.mine" false }}
+{{ range first 3 (shuffle $filtered) }}
+  <p>{{ .Title }}</p>
+{{ end }}

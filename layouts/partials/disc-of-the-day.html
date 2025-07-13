@@ -1,0 +1,22 @@
+<h2>Disc of the Day</h2>
+
+{{ $discography := site.GetPage "section" "discography" }}
+
+{{ range shuffle $discography.Pages | first 1 }}
+     {{ $page := . }}
+    <div class="flex-recording">
+        <div class="recording-text">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>Artist: <a href="{{ .Params.artist_link }}">{{ .Params.artist }}</a></p>
+            <p>Release date: <i class="date">{{ .Params.release_date | time.Format "2 Jan 2006" }}</i></p>
+        </div>
+        {{ with .Resources.GetMatch .Params.featured_image }}
+            <a href="{{ $page.RelPermalink }}"><img class="recordings-list-cover" src="{{ .RelPermalink }}" alt="Album cover for {{ $.Title }}"></a>
+        {{ end }}
+
+    </div>
+{{ end }}
+
+<p><a href="/discography">→ View all discography</a></p>
+
+<hr />

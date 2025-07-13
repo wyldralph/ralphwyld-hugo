@@ -295,6 +295,7 @@ i.data {
 .directory-block li {
 	font-size: 0.8rem;
 	padding-left: 0;
+	text-align: left;
 }
 
 div.summary-block {

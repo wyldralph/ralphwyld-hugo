@@ -4,4 +4,6 @@ draft = false
 title = 'Directory'
 +++
 
+## Directory
+
 This is a collection of links both here and elsewhere on the web.

@@ -1,7 +1,9 @@
 {{ define "main" }}
 <main class="home">
 
-  {{ .Content }} <!-- This is the content from _index.md -->
+  {{ .Content }}
+
+  {{ partial "disc-of-the-day.html" . }}
 
   {{ partial "directory.html" . }}
 
