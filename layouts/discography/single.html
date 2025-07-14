@@ -12,9 +12,20 @@
 
 </div>
 
-<div class="embed-bandcamp-player">
-  <iframe class="bandcamp-art" src="https://bandcamp.com/EmbeddedPlayer/album={{ .Params.bandcamp_code }}/size=large/bgcol=f6f6f6/linkcol=d95e00/tracklist=false/minimal=true/transparent=true/" height="350" width="350" seamless></iframe>
-</div>
+{{ if .Params.bandcamp_album }}
+  <div class="embed-bandcamp-player">
+    <iframe class="bandcamp-art" src="https://bandcamp.com/EmbeddedPlayer/album={{ .Params.bandcamp_album }}/size=large/bgcol=f6f6f6/linkcol=d95e00/tracklist=false/minimal=true/transparent=true/" height="350" width="350" seamless></iframe>
+  </div>
+{{ else if .Params.bandcamp_track }}
+  <div class="embed-bandcamp-player">
+    <iframe class="bandcamp-art" src="https://bandcamp.com/EmbeddedPlayer/track={{ .Params.bandcamp_track }}/size=large/bgcol=f6f6f6/linkcol=d95e00/tracklist=false/minimal=true/transparent=true/" height="350" width="350" seamless></iframe>
+  </div>
+{{ else }}
+  <div class="album-cover">
+    <a href="{{ .Params.listen_link }}"><img src="{{ .Params.featured_image}}"></a>
+    <p><a href="{{ .Params.listen_link }}">Listen here</a></p>
+  </div>
+  {{ end }}
 
 {{ if .Params.link }}
     <p><a href="{{ .Params.link }}" target="_blank">Visit project</a></p>

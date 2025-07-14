@@ -1,5 +1,16 @@
-{{ $projects := site.GetPage "section" "projects" }}
-{{ $filtered := where $projects.Pages "Params.mine" false }}
-{{ range first 3 (shuffle $filtered) }}
-  <p>{{ .Title }}</p>
+{{ $type := .Get "type" }}
+{{ $number := .Get "number" }}
+
+{{ $subsection := site.GetPage "section" $type }}
+{{ $filtered := $subsection.Pages }}
+
+{{ if eq $type "projects" }}
+  {{ $filtered = where $subsection.Pages "Params.mine" false }}
+{{ end }}
+
+{{ $randomPages := first $number (shuffle $filtered) }}
+{{ $count := len $randomPages }}
+
+{{ range $i, $page := $randomPages }}
+{{- if eq $i (sub $count 1) -}}{{ if gt $count 1 }}, and {{ end }}<a href="{{ $page.Permalink }}">{{ $page.Title }}</a>{{ else if eq $i 0 }}<a href="{{ $page.Permalink }}" >{{ $page.Title }}</a>{{ else }}, <a href="{{ $page.Permalink }}" >{{ $page.Title }}</a>{{- end -}}
 {{ end }}

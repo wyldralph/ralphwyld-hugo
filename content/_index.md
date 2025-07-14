@@ -4,9 +4,9 @@ draft = false
 title = 'Home'
 +++
 
-<img src="/images/rwdithered.png" class="small-image"></img>
+{{< image src="/images/rwdithered.png" class="small-image" >}}
 
-I'm a vibraphonist, percussionist, composer, and educator from the UK, performing around the world with artists such as [Yazz Ahmed](https://www.yazzahmed.com), [The James Taylor Quartet](https://www.jamestaylorquartet.co.uk), and [Chip Wickham](https://chipwickham.com).
+I'm a vibraphonist, percussionist, composer, and educator from the UK, performing around the world with artists such as {{< random-list type="projects" number=3 >}}.
 I also: 
 
 - co-lead cello and percussion duo [Imprint](https://imprint.band/) with Cecilia Bignall
