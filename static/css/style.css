@@ -1,11 +1,14 @@
 html {
-  background-color: #f6f6f6;
-  height: 100%;
-  padding-top: env(safe-area-inset-top);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
-  box-sizing: border-box;
+ height: 100%;
+        min-height: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+		background-color: #f6f6f6;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-smoothing: antialiased;
 }
 
 body {
