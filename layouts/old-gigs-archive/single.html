@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1> 
+
+  {{ .Content }}
+
+<div id="past" class="past-gigs">
+
+    <h2>Gigs 2012-2016</h2>
+
+  {{ $list := site.Data.old_gigs }}
+{{ $sorting := "desc" }}
+{{ $lastYear := "" }}
+{{ $lastMonth := "" }}
+{{ $now := now.Format "2006-01-02" }}
+
+{{ range sort (where site.Data.old_gigs "date" "lt" $now) "date" "desc" $list $sorting }}
+  {{ $parsed := time .date }}
+  {{ $year := $parsed.Format "2006" }}
+  {{ $month := $parsed.Format "January" }}
+
+  {{ if ne $year $lastYear }}
+
+    {{ $lastYear = $year }}
+    {{ $lastMonth = "" }} {{/* reset month when year changes */}}
+  {{ end }}
+
+  {{ if ne $month $lastMonth }}
+    <h3>{{ $month }} {{ $year }}</h3>
+    {{ $lastMonth = $month }}
+  {{ end }}
+  <ul class="gig-list">
+  <li><i class="date">{{ $parsed.Format "02.01" }}</i> | {{ if .artist_url }}
+   		<a href="{{ .artist_url }}">
+  			{{ .artist }}</a>
+  	{{ else }}
+  		{{ .artist }}{{ end }} in {{ .location }}</li>
+  </ul>
+{{ end }}
+
+</div>
+
+{{ end }}

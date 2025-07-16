@@ -5,7 +5,7 @@ summary = ""
 mine = false
 link = ""
 tags = []
-featured_image = "images/apophenia.jpg"
+featured_image = ""
 artist_id = ""
 +++
 
